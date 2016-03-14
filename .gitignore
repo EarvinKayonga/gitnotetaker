@@ -1,6 +1,9 @@
 
 # Created by https://www.gitignore.io/api/node,osx
 
+public/bundle.js
+*/DS_Store
+
 ### Node ###
 # Logs
 logs
@@ -44,7 +47,8 @@ jspm_packages
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
