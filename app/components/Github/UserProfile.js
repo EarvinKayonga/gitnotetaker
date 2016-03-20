@@ -5,6 +5,7 @@ var UserProfiles = React.createClass({
         username: React.PropTypes.string.isRequired,
         bio: React.PropTypes.object.isRequired
     },
+
     render: function() {
         return (
             <div>

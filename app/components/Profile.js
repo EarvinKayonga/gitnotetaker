@@ -23,6 +23,10 @@ var Profile     = React.createClass({
         }
     },
     
+    handleAddNote: function(newNote){
+        this.ref.child(this.props.params.username).child(this.state.notes.length).set(newNote);
+    },
+    
     componentDidMount: function(){
         this.ref = new Firebase('https://earvin-git.firebaseio.com');
         var childRef = this.ref.child(this.props.params.username);
@@ -52,6 +56,7 @@ var Profile     = React.createClass({
                     <Notes 
                         username={this.props.params.username}
                         notes={this.state.notes}
+                        addNote={this.handleAddNote}
                     />
                 </div>
             </div>
