@@ -7,7 +7,7 @@ var AddNote = React.createClass({
     },
     
     setRef: function (ref) {
-        this.notes = ref;
+        this.note = ref;
     },
     
     handleSubmit: function(){
